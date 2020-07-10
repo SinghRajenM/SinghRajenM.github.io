@@ -7,7 +7,7 @@
     100% To use For Personal And Commercial Use.
     IN EXCHANGE JUST GIVE US CREDITS AND TELL YOUR FRIENDS ABOUT US
    
-    ========================================================  */
+========================================================  */
 
 (function ($) {
     "use strict";
@@ -38,6 +38,14 @@
             /*====================================
                WRITE YOUR SCRIPTS BELOW 
             ======================================*/
+
+            $(function () {
+                $(".nav a").on("click", function () {
+                    if ($(".navbar-toggle").css("display") != "none") {
+                        $(".navbar-toggle").trigger("click");
+                    }
+                });
+            });
         },
 
         initialization: function () {
@@ -50,4 +58,3 @@
         mainApp.main_fun();
     });
 })(jQuery);
-
